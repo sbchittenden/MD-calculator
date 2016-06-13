@@ -25,16 +25,23 @@ body {
 }
 
 #display-bg {
-    background-color: black;
+    background-color: #dadfe1;
     margin: 0.938rem auto;
     width: 23.188rem;
     height: 5rem;
+    position: relative;
 }
 
 #display {
-  color: #87D37C;
+  color: #424242;
   font-family: 'digital', 'Courier', monospace;
   font-size: 4em;
+  margin: 0 auto;
+  position: absolute;
+  top: 57%;
+  right: 3%;
+  transform: translate(0, -50%);
+  text-align: right;
 }
 
 .key {
