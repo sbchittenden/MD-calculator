@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url('wood_pattern.png');
+    box-sizing: border-box;
+}
+
+#calc-wrap {
+    background-color: darkgrey;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 25rem;
+    height: 30rem;
+}
+
+#display-bg {
+    background-color: black;
+    margin: 0.938rem auto;
+    width: 23.188rem;
+    height: 5rem;
+}
+
+#display {
+  color: #87D37C;
+  font-family: 'Inconsolata', 'Courier', monospace;
+}
+
+.key {
+    width: 4.375rem;
+    height: 3.625rem;
+    background-color: lightgray;
+    color: white;
+    float: left;
+    margin: 0.938rem;
+    position: relative;
+    border-radius: 3px;
+}
+
+.key p {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
