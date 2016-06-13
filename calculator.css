@@ -9,6 +9,13 @@ body {
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'digital';
+    src: url('digital.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #calc-wrap {
     background-color: darkgrey;
     margin: 0 auto;
@@ -26,7 +33,8 @@ body {
 
 #display {
   color: #87D37C;
-  font-family: 'Inconsolata', 'Courier', monospace;
+  font-family: 'digital', 'Courier', monospace;
+  font-size: 4em;
 }
 
 .key {
