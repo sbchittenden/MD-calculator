@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,500);
 
 html {
     font-size: 16px;
@@ -15,21 +16,32 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+.clear-float {
+  clear: both;
+}
 
 #calc-wrap {
-    background-color: darkgrey;
-    margin: 0 auto;
-    padding: 1rem;
+    background-color: #24272b;
+    background-image: url('dark_leather.png');
+    margin: 2em auto;
     width: 25rem;
-    height: 30rem;
+    padding: 0.4rem;
+    border-radius: 0.5em;
+    border: #66635f solid 1px;
+    box-shadow: #252525 4px 4px, #252525 6px 6px;
 }
 
 #display-bg {
     background-color: #dadfe1;
-    margin: 0.938rem auto;
+    background-image: url('brushed.png');
+    margin: 2rem auto;
     width: 23.188rem;
     height: 5rem;
     position: relative;
+    box-shadow: inset #656565 1px 1px 10px,
+                inset #555555 -1px -1px 8px;
+    border: #454545 solid 2px;
+    border-radius: 4px
 }
 
 #display {
@@ -44,15 +56,48 @@ body {
   text-align: right;
 }
 
+#calc-logo {
+  font-family: 'Rubik', 'Courier', monospace;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #f7f2e8;
+  color: #1e1e1d;
+  display: inline-block;
+  padding: 0.44em;
+  width: 9.875em;
+  margin: 0em 8.4em 1.5em 0.938em;
+  border-radius: 2px;
+  box-shadow: inset white 0px 1px 2px, 
+              inset #ffffff 1px 1px,
+              #444444 1px 0px 2px, 
+              black 1px 1px;
+}
+
+#keyboard-wrap {
+  background: linear-gradient(187deg, rgba(30,30,30,0.35) 0%, rgba(0,0,0,0.55) 100%);
+  border-radius: 0.25em;
+  margin: 0.8em 0.8em 2em 0.8em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625rem;
+  padding-left: 0.125em;
+  border: solid 1px #66635f;
+  box-shadow: inset 2px 2px black,
+              inset -2px -2px black;
+  padding-left: 0.625em;
+}
+
 .key {
-    width: 4.375rem;
+    width: 4rem;
     height: 3.625rem;
-    background-color: lightgray;
-    color: white;
+    background-color: #f7f2e8;
+    color: #1e1e1d;
     float: left;
-    margin: 0.938rem;
+    margin: 0.625em 0.6em 0.625em 0.8em;
     position: relative;
     border-radius: 3px;
+    box-shadow: inset 0px 0px 3px #5b5044,
+                #252525 2px 2px, 
+                #252525 4px 4px; 
 }
 
 .key p {
@@ -63,4 +108,38 @@ body {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   font-size: 2em;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700;
 }
+
+.key:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.key:active {
+  box-shadow: inset #252525 1px 1px, 
+              inset #252525 2px 2px;
+}
+
+.color-invert {
+  color: #f7f2e8;
+  background-color: #202020;
+  font-weight: 300;
+}
+
+.color-invert:active {
+  box-shadow: inset black 2px 2px, 
+              inset black 4px 4px;
+}
+
+.red-key {
+  background-color: #CF2324;
+  color: black;
+}
+
+.blue-key {
+  background-color: #A1C8D3;
+  color: black;
+}
+
