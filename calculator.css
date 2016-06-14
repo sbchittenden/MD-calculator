@@ -113,13 +113,23 @@ body {
 }
 
 .key:hover {
-  opacity: 0.9;
+  color: black;
   cursor: pointer;
+  background-color: #FDE3A7;
+  box-shadow: inset 2px 2px 10px #fcc755,
+              inset -2px -2px 10px #fcc755,
+                #252525 2px 2px, 
+                #252525 4px 4px;
+
 }
 
 .key:active {
-  box-shadow: inset #252525 1px 1px, 
-              inset #252525 2px 2px;
+  background-color: #f9d381;
+  color: #f7f2e8;
+  box-shadow: inset #FDE3A7 1px 1px 1px, 
+              inset #FDE3A7 2px 2px 1px,
+              #f7f2e8 -1px 0px 1px;
+
 }
 
 .color-invert {
@@ -128,14 +138,43 @@ body {
   font-weight: 300;
 }
 
-.color-invert:active {
-  box-shadow: inset black 2px 2px, 
-              inset black 4px 4px;
+.color-invert:hover {
+  color: white;
+  background-color: #34495E;
+  box-shadow: inset 2px 2px 10px #5c81a5,
+              inset -2px -2px 10px #5c81a5,
+                #252525 2px 2px, 
+                #252525 4px 4px;
 }
+
+.color-invert:active {
+  box-shadow: inset #253544 1px 1px 5px, 
+              inset #253544 2px 2px 5px,
+              #91b6d8 -1px 0px 1px;
+  background-color: #5c81a5;
+  color: black;
+}
+
 
 .red-key {
   background-color: #CF2324;
   color: black;
+}
+
+.red-key:hover {
+  background-color: #f95959;
+  box-shadow: inset 2px 2px 10px #CF2324,
+              inset -2px -2px 10px #CF2324,
+                #252525 2px 2px, 
+                #252525 4px 4px;
+}
+
+.red-key:active {
+  background-color: #CF2324;
+  box-shadow: inset 2px 2px 10px #961313,
+              inset -2px -2px 10px #961313,
+                #252525 2px 2px, 
+                #252525 4px 4px;
 }
 
 .blue-key {
@@ -143,3 +182,42 @@ body {
   color: black;
 }
 
+.blue-key:hover {
+  background-color: #bae6f2;
+  box-shadow: inset 2px 2px 10px #e0f8ff,
+              inset -2px -2px 10px #e0f8ff,
+                #252525 2px 2px, 
+                #252525 4px 4px;
+  color: black;
+}
+
+.blue-key:active {
+  background-color: #4b9baf;
+  box-shadow: inset 2px 2px 10px #378396,
+              inset -2px -2px 10px #378396,
+                #252525 2px 2px, 
+                #252525 4px 4px;
+  color: #f7f2e8;
+}
+
+.green-key {
+  background-color: #87D37C; 
+}
+
+.green-key:hover {
+  background-color: #97f28a;
+  box-shadow: inset 2px 2px 10px #C8F7C5,
+              inset -2px -2px 10px #C8F7C5,
+                #252525 2px 2px, 
+                #252525 4px 4px;
+  color: black;
+}
+
+.green-key:active {
+  background-color: #7ebf74;
+  box-shadow: inset 2px 2px 10px #60a578,
+              inset -2px -2px 10px #60a578,
+                #252525 2px 2px, 
+                #252525 4px 4px;
+  color: #f7f2e8;
+}
