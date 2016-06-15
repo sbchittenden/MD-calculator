@@ -208,8 +208,7 @@ body {
 
 .color-invert:active {
   box-shadow: inset #253544 1px 1px 10px, 
-              inset #253544 2px 2px 10px,
-              #91b6d8 -1px 0px 1px;
+              inset #253544 2px 2px 10px;
   background-color: #5c81a5;
   color: black;
 }
