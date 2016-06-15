@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,500);
 
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body {
@@ -153,12 +153,28 @@ body {
 
 }
 
+.key:active > p {
+  margin: 0 auto;
+  position: absolute;
+  top: 54%;
+  left: 53%;
+  margin-right: -53%;
+  transform: translate(-54%, -53%);
+  font-size: 2em;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700;
+}
+
 .rect-key {
     width: 6rem;
     height: 2.625rem;
 }
 
 .rect-key p {
+  font-size: 1em;
+}
+
+.key.rect-key:active > p {
   font-size: 1em;
 }
 
