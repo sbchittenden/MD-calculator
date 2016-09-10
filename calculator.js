@@ -71,7 +71,7 @@
     /* ------------ decimal key ------------------ */
 
     decimalKey.addEventListener('click', function() {
-    	blinkRemove();
+        blinkRemove();
         appendInput('.');
     });
 
@@ -130,22 +130,22 @@
     /* ------------ operator keys ------------- */
 
     addKey.addEventListener('click', function() {
-    	blinkRemove();
+        blinkRemove();
         appendInput('+');
     });
 
     subKey.addEventListener('click', function() {
-    	blinkRemove();
+        blinkRemove();
         appendInput('-');
     });
 
     multiKey.addEventListener('click', function() {
-    	blinkRemove();
+        blinkRemove();
         appendInput('*');
     });
 
     divideKey.addEventListener('click', function() {
-    	blinkRemove();
+        blinkRemove();
         appendInput('/');
     });
 
@@ -168,8 +168,14 @@
 
     equalsKey.addEventListener('click', function() {
         var calcDisplayString = calculatorDisplay.innerHTML;
-        var evaluatedInput = eval(calcDisplayString).toFixed(5);
-        calculatorDisplay.innerHTML = evaluatedInput;
+        var evaluatedInput = eval(calcDisplayString);
+        var evalString = evaluatedInput.toString();
+        
+        if (evalString.slice(evalString.indexOf('.')).length > 4) {
+            calculatorDisplay.innerHTML = evaluatedInput.toPrecision(4)
+        } else {
+            calculatorDisplay.innerHTML = evaluatedInput;
+        }
     });
 
 
