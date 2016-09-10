@@ -57,11 +57,13 @@ body {
   font-family: 'Rubik', 'Inconsolata', 'Courier', monospace;
   font-size: 4em;
   margin: 0 auto;
+  width: 22rem;
   position: absolute;
   top: 57%;
   right: 3%;
   transform: translate(0, -50%);
   text-align: right;
+  overflow: scroll;
 }
 
 #calc-logo {
@@ -98,6 +100,42 @@ body {
               -1px -1px 3px #252525;
   padding-left: 0.625em;
 }
+/* cursor blink animation */
+#cursor {
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blink;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+/* end cursor blink animation */
 
 .key {
     width: 4rem;
