@@ -171,7 +171,7 @@
         var evaluatedInput = eval(calcDisplayString);
         var evalString = evaluatedInput.toString();
         
-        if (evalString.slice(evalString.indexOf('.')).length > 4) {
+        if (evalString.slice(evalString.indexOf('.')).length > 8) {
             calculatorDisplay.innerHTML = evaluatedInput.toPrecision(4)
         } else {
             calculatorDisplay.innerHTML = evaluatedInput;
