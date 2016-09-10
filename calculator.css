@@ -10,12 +10,6 @@ body {
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'digital';
-    src: url('digital.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 .clear-float {
   clear: both;
 }
@@ -60,7 +54,7 @@ body {
 
 #display {
   color: #424242;
-  font-family: 'digital', 'Courier', monospace;
+  font-family: 'Rubik', 'Inconsolata', 'Courier', monospace;
   font-size: 4em;
   margin: 0 auto;
   position: absolute;
